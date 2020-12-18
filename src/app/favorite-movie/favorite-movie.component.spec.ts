@@ -18,7 +18,8 @@ describe('FavoriteMovieComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FavoriteMovieComponent],
+      declarations: [FavoriteMovieComponent],/*
+      providers: [FavoriteMoviesService]*/
     }).compileComponents();
   });
 
@@ -26,6 +27,9 @@ describe('FavoriteMovieComponent', () => {
     fixture = TestBed.createComponent(FavoriteMovieComponent);
     favoriteMoviesService = TestBed.inject(FavoriteMoviesService);
     component = fixture.componentInstance;
+    spyOn(favoriteMoviesService, 'getMovies').and.returnValue(
+      of(favoriteMoviesToUse)
+    );
     fixture.detectChanges();
   });
 
@@ -63,11 +67,7 @@ describe('FavoriteMovieComponent', () => {
     });
   });
   describe('GetMovies test', () => {
-    beforeEach(() => {
-      spyOn(favoriteMoviesService, 'getMovies').and.returnValue(
-        of(favoriteMoviesToUse)
-      );
-    });
+
 
     it('should get all Movies', () => {
       fixture.detectChanges();

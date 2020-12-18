@@ -1,3 +1,7 @@
 [1218/102205.555:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1218/110248.284:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
 [1218/115940.163:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1218/130536.628:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1218/141846.352:ERROR:file_io_win.cc(162)] CreateFile C:\Users\SOC-AL~1\AppData\Local\Temp\karma-79778923\Crashpad\settings.dat: El sistema no puede encontrar la ruta especificada. (0x3)
+[1218/141846.352:ERROR:file_io_win.cc(171)] CreateFile C:\Users\SOC-AL~1\AppData\Local\Temp\karma-79778923\Crashpad\reports\10f10a58-1533-4a28-b868-b346ee88bbe9.dmp: El sistema no puede encontrar la ruta especificada. (0x3)
+[1218/141846.352:ERROR:crash_report_exception_handler.cc(99)] PrepareNewCrashReport failed
